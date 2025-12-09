@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    cursor: default;
+    user-select: none;
+}
+
+section {
+  height: 100vh;
+}
+
+
+:root{
+--black-marble:   #0B0C10; /* Nagyon mély, enyhén textúrás érzetű fekete. A háttér 90%-a lehet ez. */
+--deep-stone:     #1A1B20; /* Finoman szürkés-fekete — kiváló szakaszháttér vagy overlay */
+--iron-grey:      #2E3038; /* Card-ok, gombok, konténerek. */
+
+--marble-light:   #D7D7D7; /* Nem hófehér! Márványra emlékeztető világos tónus. */
+--marble-warm:    #E6E3DF; /* Kicsit melegebb, de még mindig elegáns. Címsorokhoz, quote-okhoz gyönyörű */
+
+--gold-accent:    #C6A667; /* Visszafogott, nem túl élénk arany. Tökéletes gombokhoz, ikonokhoz. */
+--bronze-accent:  #A48354; /* Mélységet ad, szobor- és márvány-hangulatot erősíti. */
+}
+
+/* MENU */
+
+header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: var(--iron-grey);
+}
+
+.menu {
+    width: 1000px; /* 1000px */
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 100%;
+    display: table;
+    float: left;
+    padding-left: 1rem;
+}
+
+.logo h1 {
+    color: var(--marble-light);
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: sans-serif; /* FONT STYLE NEEDED!*/
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.logo h1 span {
+    font-weight: 100;
+}
+
+.nav {
+    float: right;
+    height: 100%;
+}
+
+.nav li{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0 20px;
+}
+
+.nav li:last-child{
+    padding-right: 0;
+}
+
+.nav li a{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: var(--marble-light);
+    font-family: sans-serif; /* FONT STYLE NEEDED!*/
+    font-size: 16px;
+    cursor: default;
+}
+
+.icon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .text {
+    display: none;
+  }
+  .icon {
+    display: inline;
+  }
+}
+
+span.text {
+    cursor: pointer;
+}
+
+a {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+
+/* MAIN */ 
+
+.hero {
+    background-color: var(--black-marble)
+}
+
+.motto {
+    color: var(--marble-warm);
+    font-size: 3.4rem
+} /*
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    padding-left: 20vw;
+    padding-right: 64rem;
+}
+
+.statue {
+    display: flex;
+    
+}
+
+.hero {
+  /*position: relative;  */ /* 
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  width: 800px;
+  height: 800px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle,
+    rgba(230, 227, 223, 0.22) 0%,
+    rgba(0, 0, 0, 0.00) 70%
+  );
+  filter: blur(40px);
+  z-index: 0;
+}
+
+/*FOOTER*/
+
+footer {
+    opacity: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    padding-bottom: 5px;
+} /* DONE */
